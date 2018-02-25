@@ -23,18 +23,18 @@ const num_3 = 20;
 
 
 function pairAddition(arr, num){
-  let outputArr = [];
-  for(var i=0; i<arr.length-1; i++){
-    for(var k=i+1; k<arr.length; k++){
-      if(arr[i]+arr[k]===num){
-        const pairArr=[arr[i],arr[k]];
-        outputArr.push(pairArr);
+    let outputArr = [];
+    for(var i=0; i<arr.length-1; i++){
+      for(var k=i+1; k<arr.length; k++){
+        if(arr[i]+arr[k]===num){
+          const pairArr=[arr[i],arr[k]];
+          outputArr.push(pairArr);
+        }
       }
     }
-  }
-  if(outputArr.length){
-    return outputArr;
-  }else return null;
+    if(outputArr.length){
+      return outputArr;
+    }else return null;
 }
 
 console.log(pairAddition(numArr_1,num_1));

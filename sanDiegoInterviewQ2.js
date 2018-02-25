@@ -17,15 +17,15 @@ const num_4 = 12;
 
 
 function addNum(num){
-  let sum = 0;
-  for(var i=1; i<num+1; i++){
-    if((i%5===0) || (i%7===0)){
-      continue;
-    }
-    sum+=i;
-  }
+	let sum = 0;
+  	for(var i=1; i<num+1; i++){
+    	if((i%5===0) || (i%7===0)){
+      		continue;
+    	}
+    	sum+=i;
+  	}
   
-  return sum;
+  	return sum;
 }
 
 console.log(addNum(num_1));
