@@ -16,6 +16,23 @@ e.g.
   compose([funct1,funct2,funct3])(5.7);
 */
 
+// compose([add1, floor, times9])(0.783255)
+// is the same as:
+// add1(floor(times9(0.783255)));
+
+// compose([add1, floor, times9])(0.783255)
+// add1(compose([floor, times9])(0.783255))
+// add1(floor(compose([times9])(0.783255)))
+
+// compose([floor, times9])(0.783255)
+// -> floor(compose([times9])(0.783255))
+
+// compose([times9])(0.783255)
+// -> times9(compose([])(0.783255))
+
+// compose([])(0.783255)
+// -> 0.783255
+
 
 const times9 = (number) => 9*number;
 const floor = (number) => Math.floor(number);
