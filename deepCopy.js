@@ -34,6 +34,7 @@ let deepCopy =(obj)=>{
             let returnObj = {};
             for(var idx in obj){
                 returnObj[idx] = obj[idx];
+                //may need to do an array check here
             }
             return returnObj;
       
