@@ -13,9 +13,9 @@ e.g.
 
 function counts(nums, maxes) {
     const output = [];
-    for(var m=0; m<maxes.length; m++){ //loop through maxes
+    for(let m=0; m<maxes.length; m++){ //loop through maxes
         let counter = 0;
-        for(var i=0; i<nums.length; i++){ // loop through nums
+        for(let i=0; i<nums.length; i++){ // loop through nums
             if(nums[i] <= maxes[m]){
                 counter++;
             }
