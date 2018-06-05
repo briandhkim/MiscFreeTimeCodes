@@ -27,14 +27,14 @@ function getMinimumDifference(a, b) {
             let lettersB = {};
             for(let k = 0; k<letterLength; k++){
                 if(!lettersA[a[i][k]]){
-                    lettersA[a[i][k]] = 1;
+                    lettersA[ a[i][k] ] = 1;
                 }else{
-                    lettersA[a[i][k]]++;
+                    lettersA[ a[i][k] ]++;
                 }
-                if(!lettersB[b[i][k]]){
-                    lettersB[b[i][k]] = 1;
+                if(!lettersB[ b[i][k] ]){
+                    lettersB[ b[i][k] ] = 1;
                 }else{
-                    lettersB[b[i][k]]++;
+                    lettersB[ b[i][k] ]++;
                 }
             }
             for(let letter in lettersA){
